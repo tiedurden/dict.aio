@@ -4,7 +4,9 @@
 Open one Homepage that contains
 primarily a search field to  type in word(engl engl)
 opehs 4 (multiple) iframes that link to dictionaries with the results using APIs 
-- API collection file
+Files
+  - API collection file (org?)
   - CSS File 
   - JS File
+  - index
 - Use PHP Storm 
