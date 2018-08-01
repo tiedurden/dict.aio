@@ -1,0 +1,19 @@
+API Base URL	https://od-api.oxforddictionaries.com/api/v1
+Consistent part of API requests.
+
+Application ID	edaaa4ee
+This is the application ID, you should send with each API request.
+
+Application Keys	85268965684e5fff4ae537ab6e5d3ca2	—
+These are application keys used to authenticate requests.
+
+At most 5 keys are allowed.
+
+
+
+https://developer.oxforddictionaries.com/admin/applications/1409617859607
+
+Username: 
+durdentie
+PW:
+Standard.
