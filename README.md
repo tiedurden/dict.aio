@@ -3,7 +3,7 @@
 
 Open one Homepage that contains
 primarily a search field to  type in word(engl engl)
-opehs 4 (multiple) iframes that link to dictionaries with the results using APIs 
+opens  multiple iframes that link to dictionaries with the results using APIs 
 Files
   - API collection file (org?)
   - CSS File 
