@@ -1,0 +1,134 @@
+<!--Status: 0308 15:15 insert input into link works
+To do:
+Change variable/attribute/id-names
+Work on the Layout and the Looks
+
+make vocabulary list of used(and working) codelines/elements
+
+
+Open multiple links on one click ("open multiple links.html)
+-> works (X)
+Link to macmillan dict. is working but is not giving a result
+
+Open multiple links on one click ("open multiple links.html) (X)
+Open Link(s) with the first click on the button (X)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3 in One Dictionary</title>
+</head>
+<style>
+
+    iframe {
+        width: 100%;
+        border: none;
+        height:400px;
+    }
+
+    body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #CCCCCC;
+    }
+    .wrapper {
+        background-color: #CCCCCC;
+        padding: 12px;
+        width: 50%;
+        margin: auto;
+        color: #CCCCCC;
+        border: solid 1px darkgray;
+    }
+    .form-sub {
+        padding-top: 12px;
+    }
+
+    a{
+        float: right;
+    }
+
+</style>
+<body>
+
+<body>
+<div class="wrapper">    <h1 style="color:darkgray">DENISE HOMEWORK HELPER 1.0</h1>
+</div>
+
+<div class='wrapper'>
+    <form id='nameForm'>
+        <div class='form-uname'>
+            <lable id='nameLable' for='nameField'>Type in </lable>
+            <input id='nameField' type='text' placeholder="Search.." maxlength='25'></input>
+
+
+        </div>
+
+        <div class='form-sub'>
+            <button id='subButton' onclick="openLink() "type='button'>Translate</button>
+            <a href="index.html">de - en </a><br>
+            <a href="ThreeInOneDictionary_en-de.html">en - en</a><br>
+            <a href="ThreeInOneDictionary_thes.html" title="Search MerriamWebster, Cambridge Dictionary and Thesaurus.com">thesaurus</a><br>
+        </div>
+
+    </form>
+
+</div>
+
+
+<iframe src="https://en-de.dict.cc/" name="frame1"></iframe>
+<iframe src="https://en.pons.com/translate" name="frame2"></iframe>
+<iframe src="hhttps://dict.leo.org/englisch-deutsch/" name="frame3"></iframe>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    // the function which handles the input field logic and returns the input
+    function getUserInput() {
+        var nameField = document.getElementById('nameField').value;
+        var result = document.getElementById('result');
+
+
+        return nameField;
+    }
+
+
+    // use an eventlistener for the event (¿saves the value?)
+    var subButton = document.getElementById('subButton');
+    subButton.addEventListener('click', getUserInput(), false);
+
+
+    //makes the link(id="alink) visible after the input gets filled in
+    //
+    function openLink() {
+
+        var translate1 = "https://www.dict.cc/" + getUserInput();
+        var translate2 = "https://en.pons.com/translate?q=" + getUserInput() + "&l=deen&in=en&lf=en";
+        var translate3 = "https://dict.leo.org/englisch-deutsch/" + getUserInput() + "?side=left";
+
+
+
+        window.open(translate1, "frame1");
+        window.open(translate2, "frame2");
+        window.open(translate3, "frame3");
+
+
+
+    }
+
+    //https://en.oxforddictionaries.com/definition/
+
+
+
+
+
+</script>
+
+</body>
+</html>
