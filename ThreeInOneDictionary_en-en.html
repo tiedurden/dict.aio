@@ -1,18 +1,4 @@
-<!--Status: 0308 15:15 insert input into link works
-To do:
-Change variable/attribute/id-names
-Work on the Layout and the Looks
 
-make vocabulary list of used(and working) codelines/elements
-
-
-Open multiple links on one click ("open multiple links.html)
--> works (X)
-Link to macmillan dict. is working but is not giving a result
-
-Open multiple links on one click ("open multiple links.html) (X)
-Open Link(s) with the first click on the button (X)
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,8 +94,7 @@ Open Link(s) with the first click on the button (X)
 
 
 <iframe src="https://en-de.dict.cc/" name="frame1"></iframe>
-<iframe src="https://en.pons.com/translate" name="frame2"></iframe>
-<iframe src="hhttps://dict.leo.org/englisch-deutsch/" name="frame3"></iframe>
+<iframe src="hhttps://dict.leo.org/englisch-deutsch/" name="frame2"></iframe>
 
 
 
@@ -155,14 +140,12 @@ Open Link(s) with the first click on the button (X)
     function openLink() {
 
         var translate1 = "https://www.dict.cc/" + getUserInput();
-        var translate2 = "https://en.pons.com/translate?q=" + getUserInput() + "&l=deen&in=en&lf=en";
-        var translate3 = "https://dict.leo.org/englisch-deutsch/" + getUserInput() + "?side=left";
+        var translate2 = "https://dict.leo.org/englisch-deutsch/" + getUserInput() + "?side=left";
 
 
 
         window.open(translate1, "frame1");
         window.open(translate2, "frame2");
-        window.open(translate3, "frame3");
 
 
 
