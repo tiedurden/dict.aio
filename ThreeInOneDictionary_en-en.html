@@ -1,3 +1,20 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @tiedurden Sign out
+0
+0 0 tiedurden/dict.aio
+ Code  Issues 0  Pull requests 0  Projects 1  Wiki  Insights  Settings
+dict.aio/index.html
+b56f287  3 minutes ago
+@tiedurden tiedurden Update index.html
+     
+115 lines (77 sloc)  2.64 KB
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,13 +23,11 @@
     <title>3 in One Dictionary</title>
 </head>
 <style>
-
     iframe {
         width: 100%;
         border: none;
         height:400px;
     }
-
     body {
         margin: 0;
         font-family: sans-serif;
@@ -22,45 +37,17 @@
         background-color: #CCCCCC;
         padding: 12px;
         width: 50%;
+        margin: auto;
         color: #CCCCCC;
         border: solid 1px darkgray;
     }
     .form-sub {
         padding-top: 12px;
     }
-
     a{
-        float: left;
+        float: right;
     }
-
-    .accordion {
-        background-color: #eee;
-        color: #444;
-        cursor: pointer;
-        padding: 5px;
-        width: 70px;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-
-    }
-
-    .active, .accordion:hover {
-        background-color: #ccc;
-    }
-
-    .panel {
-        padding: 0 18px;
-        display: none;
-        background-color: white;
-        overflow: hidden;
-    }
-
 </style>
-<body>
-
 <body>
 <div class="wrapper">    <h1 style="color:darkgray">DENISE HOMEWORK HELPER 1.0</h1>
 </div>
@@ -69,39 +56,26 @@
     <form id='nameForm'>
         <div class='form-uname'>
             <lable id='nameLable' for='nameField'>Type in </lable>
-            <input id='nameField' type='text' placeholder="Search.." maxlength='25'></input>
+            <input id='nameField' type='text' placeholder="Search.." maxlength='25' ></input>
 
+            <! onkeypress="return openLink()">
 
         </div>
 
         <div class='form-sub'>
             <button id='subButton' onclick="openLink() "type='button'>Translate</button>
-
-
+            <a href="index.html">de - en </a><br>
+            <a href="ThreeInOneDictionary_en-en.html">en - en</a><br>
+            <a href="ThreeInOneDictionary_thes.html" title="Search MerriamWebster, Cambridge Dictionary and Thesaurus.com">thesaurus</a><br>
         </div>
 
     </form>
 
 </div>
-<div>
-    <button class="accordion">Versions</button>
-    <div class="panel">
-        <a href="index.html">de - en </a><br>
-        <a href="ThreeInOneDictionary_en-de.html">en - en</a><br>
-        <a href="ThreeInOneDictionary_thes.html" title="Search MerriamWebster, Cambridge Dictionary and Thesaurus.com">thesaurus</a><br>
-    </div>
-</div>
+
 
 
 <iframe src="https://www.merriam-webster.com/dictionary/" name="frame2"></iframe>
-
-
-
-
-
-
-
-
 
 
 <script type="text/javascript">
